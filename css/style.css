@@ -1,0 +1,221 @@
+
+/* fonts */
+h1, h2, h3, h4, h5, h6, p{
+	font-family: Ubuntu;
+}
+
+/* header */
+
+header {
+    border-top: 4px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	background-color: #EAEAEC;
+}
+
+header .media-body {
+    text-align: right;
+    padding-right: 10px;
+}
+
+header .media {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+header .media-body h2 {
+    margin-bottom: 0;
+    font-style: normal;
+}
+
+header .media-body h2 span {
+    font-weight: bold;
+    color: #00529f;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.padding-zero {
+    padding: 0;
+}
+
+.bg-yellow {
+    background-color: #fecd28;
+}
+
+/*made by Ali*/
+@media (min-width: 1px) and (max-width: 1000px) {
+	.logo, .MediaCon{
+		text-align: center;
+	}
+}
+
+
+
+/* navigation menu*/
+
+.navbar {
+    background-color: #fecd28 !important;
+    font-weight: 600;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    background: none;
+    border: none;
+}
+
+.dropdown-menu {
+    margin-top: -1px;
+    min-width: 250px;
+}
+
+.dropdown-menu .links {
+    background: #666;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-menu a:hover {
+    background: #fff;
+    transition: all 200ms linear;
+}
+
+
+/*carousel*/
+
+.img_opacity{
+	background-color: rgba(255, 255, 255, 0.3);
+	color: black;
+}
+
+
+/*services*/
+
+
+.img_services{
+
+	padding-bottom: 15px;
+}
+
+.img_thumb{
+	padding-top: 15px;
+	padding-bottom: 30px
+}
+
+.bg-color{
+	background-color: #81c0c5;
+	padding: 50px;
+}
+
+/*contact us*/
+
+.hov_img:hover .image{
+    opacity: 0.3;
+	}
+.hov_img:hover .middle{
+    opacity: 1;
+}
+.image{
+    opacity: 1;
+    display: block;
+    width:100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.text {
+    color:black;
+    font-size: 16px;
+    padding:16px 32px;
+}
+
+/* slideanimation */
+.slideanimation {visibility:hidden;}
+.slideanim {
+    /* The name of the animation */
+    animation-name: slideanim;
+    -webkit-animation-name: slideanim; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slideanim {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slideanim {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* footer */
+
+footer{
+	background-color:#004B62;
+}
+.footer-text{
+	color:#f2eeed;
+}
+.list-unstyled li a{
+	color:#f9b401;
+}
+.footer-logo {
+    max-height: 130px;
+}
+
+.footer-logo img {
+    height: 130px;
+	display: block;
+    margin: auto;
+}
+.footer-div{
+	display: block;
+    margin: auto;
+} 
